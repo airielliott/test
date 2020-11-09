@@ -1,0 +1,642 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 以上がリセットCSS */
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+header {
+  height: 70px;
+  background: #000;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+#eyecatch {
+  height: 500px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch > p {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+
+#eyecatch {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#settlement {
+  background-color: #f2f2f2;
+  width: 500px;
+  height: 30px;
+  padding: 10px;
+  margin: 450px 0 0 0;
+}
+
+#news {
+  background: black;
+  height: 30px;
+  width: 50px;
+  margin: 447px 0 0 0;
+  padding:20px 40px 5px 40px
+}
+
+#news p {
+  color: #ccc;
+}
+
+#for-client{
+  position: relative;
+}
+
+.black{
+  background: black;
+  height: 350px;
+}
+
+.white{
+  background:white;
+  height: 120px;
+}
+
+
+.orange, .for-client-contents{
+  position: absolute;
+}
+
+.orange{
+  top: 100px;
+  left: 500px;
+  width: 450px;
+  z-index:10
+}
+
+.for-client-contents{
+  top: 140px;
+  left: 200px;
+  z-index:20
+
+}
+
+.client-title{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.client-title-contents{
+  color: white;
+  font-size: 12px;
+  width: 500px;
+  
+}
+
+#for-client .mission-button a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 14px;
+  color:black;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px #white solid;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  margin-top: 20px;
+  width:100px;
+
+}
+
+#service{
+  height: 2000px;
+  background: #ccc;
+  position: relative;
+}
+
+#service h2{
+  text-align: center;
+  font-size: 30px;
+  padding-top:20px;
+}
+
+.service-contents{
+  position: absolute;
+  top: 100px;
+  left:700px;
+  z-index: 20;
+  width: 600px;
+  height: 400px;
+  background: white;
+
+}
+
+.camera{
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 1000px;
+  z-index: 10;
+}
+
+#service .service-contents .service-contents-title{
+  font-size: 20px;
+  margin-top:50px;
+  margin-left: 50px;
+  font-weight: bold;
+  
+}
+
+#service .service-contents .service-contents-mission{
+  font-size: 15px;
+  margin-top:50px;
+  margin-left: 50px;
+
+}
+
+#service .service-contents .service-contents2{
+  font-size: 15px;
+  margin-top:50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#service .service-contents .service-button a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 10px;
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px black solid;
+  border-radius: 2px;
+  transition: 0.4s ease;
+  margin-top: 60px;
+  width:60px;
+  margin-left:450px;
+}
+
+
+.smoke{
+  position: absolute;
+  top: 1000px;
+  left:0;
+  width:1000px;
+  z-index: 10;
+
+}
+
+.service-contents-2{
+  position: absolute;
+  top: 1100px;
+  left:700px;
+  width: 600px;
+  height: 400px;
+  background: white;
+  z-index: 30;
+
+}
+
+.service-contents-title-2{
+  font-size: 20px;
+  margin-top:50px;
+  margin-left: 50px;
+  font-weight: bold;
+  
+}
+
+.service-contents-mission-2{
+  font-size: 15px;
+  margin-top:50px;
+  margin-left: 50px;
+
+}
+
+.service-contents-4{
+  font-size: 15px;
+  margin-top:50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.service-button-2 a{
+  display: block;
+  padding: 5px 20px;
+  font-size: 10px;
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px black solid;
+  border-radius: 2px;
+  transition: 0.4s ease;
+  margin-top: 50px;
+  width:60px;
+  margin-left:450px;
+}
+
+#other{
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+}
+
+.company{
+  position: absolute;
+  bottom: 0;
+  width: 800px;
+  height: 200px;
+  background: url(../img/company.jpeg);
+  margin-bottom: 0;
+  color: white;
+  
+  
+}
+
+.recruit{
+  width: 800px;
+  height: 200px;
+  background: url(../img/recruit.jpg);
+  background-position: 20% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.english{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 80px;
+  text-align: center;
+  
+}
+
+.japanese{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#faq{
+  height: 300px;
+  
+
+}
+
+.faq-contents{
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  background: black;
+  color: white;
+  margin: 50px auto;
+}
+
+.faq-en{
+text-align: left;
+font-size: 40px;
+font-weight: bold;
+padding-top:60px
+}
+
+.faq-ja{
+text-align: center;
+}
+
+#contact{
+  background: url(../img/contact-bg.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+
+}
+
+.contact-en, .contact-ja, .contact-message, .contact-message-contents, .contact-button{
+  text-align: center;
+  color: white;
+}
+
+.contact-en{
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 100px;
+
+}
+.contact-ja{
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.contact-message{
+  font-size: 20px;
+  padding-top: 30px;
+
+}
+
+.contact-message-contents{
+  font-size: 12px;
+  padding-top: 30px;
+}
+
+.contact-button a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  border: 1px white solid;
+  border-radius: 2px;
+  transition: 0.4s ease;
+  padding: 10px 10px;
+  margin: 20px auto;
+  width:150px;
+
+}
+
+
+footer {
+  height: 70px;
+  background: #000;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+#copyright{
+  background: black;
+}
+
+#copyright p{
+  text-align: center;
+  color: white;
+}
+
+
+  
+
+
+
+
+
+
