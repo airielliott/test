@@ -1,0 +1,560 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+header {
+  height: 70px;
+  background: #000;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#eyecatch {
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+#eyecatch .title {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
+#eyecatch .news-contents {
+  position: absolute;
+  top: 550px;
+  left: 60%;
+  background: white;
+  height: 50px;
+  width: 30%;
+}
+
+#eyecatch .news-frame {
+  position: absolute;
+  background: black;
+  color: white;
+  height: 50px;
+  width: 10%;
+  top: 550px;
+  left: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mission {
+  height: 450px;
+  background: black;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.mission-frame {
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 40%;
+  z-index: 20;
+}
+
+.orange {
+  position: absolute;
+  width: 30%;
+  top: 20%;
+  left: 55%;
+  z-index: 10;
+}
+
+.mission-title {
+  font-weight: bold;
+  font-size: larger;
+  margin-bottom: 30px;
+}
+
+.mission-contents {
+  margin-bottom: 30px;
+}
+
+.mission-link {
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  color: black;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease;
+  background: white;
+}
+
+#service h2 {
+  text-align: center;
+  font-size: xx-large;
+  padding: 20px;
+}
+
+#service,
+#service2 {
+  background: #ccc;
+  height: 800px;
+  position: relative;
+}
+
+.camera {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 50%;
+  z-index: 10;
+}
+
+.service-frame {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  padding: 50px;
+  width: 30%;
+  background: white;
+  height: 35%;
+  z-index: 20;
+}
+
+.service-title,
+.service-title-2 {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.service-link-parent {
+  margin: 0 0 0 auto;
+}
+
+.service-link,
+.service-link-2 {
+  display: block;
+  margin-top: 20px;
+  margin-left: 400px;
+  text-align: center;
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  color: black;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease;
+  background: white;
+  border: 1px black solid;
+  width: 150px;
+}
+
+.service-contents,
+.service-contents2,
+.service-contents-2,
+.service-contents2-2 {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.smoke {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 50%;
+  z-index: 10;
+}
+
+.service-frame-2 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  padding: 50px;
+  width: 30%;
+  background: white;
+  height: 35%;
+  z-index: 20;
+}
+
+#company-recruit {
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company,
+.recruit {
+  width: 45%;
+  height: 200px;
+  margin-top: 100px;
+  position: relative;
+  color: white;
+}
+
+.company {
+  background: url(../img/company.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 250px;
+}
+
+.recruit {
+  background: url(../img/recruit.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 250px;
+}
+
+.company h2,
+.recruit h2 {
+  font-size: xx-large;
+}
+
+.company-contents,
+.recruit-contents {
+  font-weight: bold;
+
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.company p,
+.recruit p {
+  font-size: 16px;
+  text-align: center;
+}
+
+#faq {
+  height: 400px;
+  position: relative;
+}
+
+.faq-frame {
+  width: 70%;
+  height: 100px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-frame h2,
+.faq-frame p {
+  color: white;
+}
+
+.faq-frame p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-frame h2 {
+  font-size: 30px;
+  line-height: 100px;
+  margin-left: 30px;
+}
+
+#contact {
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 600px;
+}
+
+.contact-frame {
+  display: block;
+  text-align: center;
+  color: white;
+  height: 300px;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#contact h2 {
+  font-size: xx-large;
+  padding-bottom: 20px;
+}
+
+.contact1 {
+  padding-bottom: 50px;
+}
+
+.contact2 {
+  font-size: xx-large;
+  padding-bottom: 50px;
+}
+
+.contact3 {
+  padding-bottom: 50px;
+}
+
+.contact-link {
+  color: white;
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  transition: 0.4s ease;
+  border: 1px white solid;
+}
+
+footer {
+  height: 70px;
+  background: #000;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+small {
+  display: block;
+  text-align: center;
+  color: white;
+  background: black;
+}
